@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/back5">
+   <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back" 
+        android:textSize="40dp"
+        android:id="@+id/resourcelist_back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+<ListView 
+    android:layout_width="fill_parent"
+       android:layout_height="300dp"
+       android:id="@android:id/list"
+       android:smoothScrollbar="true"
+       android:layout_below="@+id/go">
+</ListView>
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ok" 
+        android:textSize="40dp"
+        android:id="@+id/go"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/list"
+        android:layout_alignParentLeft="true"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/baidugo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/baidu"
+        android:textSize="40dp" />
+    <LinearLayout 
+        android:id="@+id/chart" 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dip" 
+        android:layout_weight="1"
+        android:layout_below="@android:id/list"
+        android:layout_alignParentLeft="true"
+        />
+</RelativeLayout>

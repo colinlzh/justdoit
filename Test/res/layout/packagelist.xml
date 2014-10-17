@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/back4">
+    <ListView
+       android:layout_width="fill_parent"
+       android:layout_height="400dp"
+       android:id="@android:id/list"/>
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back" 
+        android:textSize="40dp"
+        android:id="@+id/show"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemnum" 
+        android:text="@string/itemnum" 
+        android:textSize="30dp"
+		android:layout_below="@android:id/list"/>
+
+    <Spinner
+        android:id="@+id/picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/itemnum" 
+        android:layout_alignTop="@+id/itemnum"/>
+
+</RelativeLayout>
